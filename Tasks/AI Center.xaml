@@ -1,0 +1,315 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Test" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="Test_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:um="clr-namespace:UiPath.MLServices;assembly=UiPath.MLServices" xmlns:uma="clr-namespace:UiPath.MLServices.Activities;assembly=UiPath.MLServices.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.MLServices</x:String>
+      <x:String>UiPath.MLServices.Enums</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.MLServices.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Shared.Telemetry</x:String>
+      <x:String>Newtonsoft.Json.Linq</x:String>
+      <x:String>Newtonsoft.Json</x:String>
+      <x:String>System.Dynamic</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Collections.Specialized</x:String>
+      <x:String>UiPath.Web.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.MLServices</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.MLServices.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.DocumentUnderstanding.ML.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.IntelligentOCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OmniPage.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Persistence.Activities</AssemblyReference>
+      <AssemblyReference>netstandard</AssemblyReference>
+      <AssemblyReference>Newtonsoft.Json</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Collections.Specialized</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Test" sap:VirtualizedContainerService.HintSize="1172,1288" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence sap:VirtualizedContainerService.HintSize="467.2,1216.8" sap2010:WorkflowViewState.IdRef="Sequence_8">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:String" Name="JResponce" />
+        <Variable x:TypeArguments="njl:JObject" Name="JsonObject" />
+        <Variable x:TypeArguments="x:String" Name="Based64String" />
+        <Variable x:TypeArguments="sd:Image" Name="Image" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uma:MLSkills ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" Name="{x:Null}" NumberOfRetries="{x:Null}" ResponseHeaders="{x:Null}" Result="{x:Null}" StatusCode="{x:Null}" TimeOutMs="{x:Null}" ApiKey="d203a3a2-b48d-487a-bef1-a1f6060d51aa" Connection="Robot" DisplayName="MLSkill" ExternApiFileType="JSON" sap:VirtualizedContainerService.HintSize="433.6,443.2" sap2010:WorkflowViewState.IdRef="MLSkills_3" Item="G:\Uipath academy\AI Center\first.jpg" JsonResponse="[JResponce]" NextPageNum="2" RefreshList="False" SkillURL="https://ai-uipath-we-b.deskover.com/public/mlskills/53e6fd64-bd0b-46cb-ac93-19774404ba30/83971e21-02e4-4432-89ea-f3eb4ba21b57/sentimentanalysisskill" TotalCount="3">
+        <uma:MLSkills.MLSkillList>
+          <scg:List x:TypeArguments="um:MLSkill" Capacity="4">
+            <x:Reference>__ReferenceID0</x:Reference>
+            <um:MLSkill AccessUri="https://ai-uipath-we-b.deskover.com/mlskills/53e6fd64-bd0b-46cb-ac93-19774404ba30/83971e21-02e4-4432-89ea-f3eb4ba21b57/cluster-b/sentimentanalysisskill" AccountId="53e6fd64-bd0b-46cb-ac93-19774404ba30" Description="" Id="c7ee9628-3721-4da5-9dd7-99e82f87880c" InputDescription="Text to be analyzed.For example:&quot;I am dissatisfied with this service&quot;" InputType="JSON" Name="SentimentAnalysisSkill" OutputDescription="JSON with class name and confidence on that class prediction (between 0-1). Class prediction can be one of: &quot;Very Negative&quot;, &quot;Negative&quot;, &quot;Neutral&quot;, &quot;Positive&quot;, &quot;Very Positive&quot;. For example: {&quot;sentiment&quot;: &quot;Very Negative&quot;, &quot;confidence&quot;: 0.97}" ProjectId="ce05b4fe-1e40-406c-8035-e41a1aeb6412" TenantId="83971e21-02e4-4432-89ea-f3eb4ba21b57" />
+            <um:MLSkill AccessUri="https://ai-uipath-we-b.deskover.com/mlskills/53e6fd64-bd0b-46cb-ac93-19774404ba30/83971e21-02e4-4432-89ea-f3eb4ba21b57/cluster-b/signatchercomparizonemlskill" AccountId="53e6fd64-bd0b-46cb-ac93-19774404ba30" Description="" Id="a1e76c0f-5500-4e15-91ee-3f24520aebe2" InputDescription="A pair of signature images in a list. Files formats accepted are png, and jpeg." InputType="FILE_LIST" Name="SignatcherComparizoneMLSkill" OutputDescription="Similarity score (between 0 and 1) and a preliminary determination if the signatures are from the same author or different authors based on a defined threshold in a Json format." ProjectId="45f17f35-2ef6-4fa4-bb07-49da6cfef416" TenantId="83971e21-02e4-4432-89ea-f3eb4ba21b57" />
+          </scg:List>
+        </uma:MLSkills.MLSkillList>
+        <uma:MLSkills.SelectedMLSkill>
+          <um:MLSkill x:Name="__ReferenceID0" AccessUri="https://ai-uipath-we-b.deskover.com/mlskills/53e6fd64-bd0b-46cb-ac93-19774404ba30/83971e21-02e4-4432-89ea-f3eb4ba21b57/cluster-b/imagedetectionskill" AccountId="53e6fd64-bd0b-46cb-ac93-19774404ba30" Description="" Id="7710d65e-5e09-4e58-a21f-1114f558ca96" InputDescription="Path to the image to be analyzed." InputType="FILE" Name="ImageDetectionSkill" OutputDescription="JSON with identified object's class byte array representation (allows you to see box around objects), identified object's class - name, score (between 0-1) and bounding_boxes coordinates. Example: {&quot;Predicted ByteArray&quot;: &quot;/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAIBAQEBAQIBAQECAgICAgQDAgI…TD&quot;, &quot;Predicted Class&quot;: [{&quot;class&quot;: &quot;book&quot;, &quot;score&quot;: &quot; 0.65&quot;, &quot;bounding_box&quot;: [38.348690032958984, 274.14703369140625, 116.80537414550781, 306.26788330078125]}, {&quot;class&quot;: &quot;book&quot;, &quot;score&quot;: &quot; 0.62&quot;, &quot;bounding_box&quot;: [34.108882904052734, 236.6508331298828, 118.49102783203125, 272.1687316894531]}]}" ProjectId="ce05b4fe-1e40-406c-8035-e41a1aeb6412" TenantId="83971e21-02e4-4432-89ea-f3eb4ba21b57" />
+        </uma:MLSkills.SelectedMLSkill>
+      </uma:MLSkills>
+      <ui:DeserializeJson x:TypeArguments="njl:JObject" JsonSample="{x:Null}" DisplayName="Deserialize JSON" sap:VirtualizedContainerService.HintSize="433.6,122.4" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_3" JsonObject="[JsonObject]" JsonString="[JResponce]" />
+      <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_4">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">[Based64String]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">[JsonObject("Predicted ByteArray").ToString]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_5">
+        <Assign.To>
+          <OutArgument x:TypeArguments="sd:Image">[Image]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="sd:Image">[System.Drawing.Image.FromStream(New MemoryStream(Convert.FromBase64String(Based64String)))]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <ui:SaveImage DisplayName="Save Image" FileName="DocumentProcessing\Untitled.png" sap:VirtualizedContainerService.HintSize="433.6,166.4" sap2010:WorkflowViewState.IdRef="SaveImage_1" Image="[Image]" />
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="433.6,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_4" Message="[JsonObject]" />
+    </Sequence>
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="467.2,48" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="483.2,164.8" sap2010:WorkflowViewState.IdRef="Sequence_7">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Sequence DisplayName="Sequence (Segnature comparizon)" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="Sequence_6">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="OrignalsegnatcherPath" />
+              <Variable x:TypeArguments="x:String" Name="TestSignatcherPath" />
+              <Variable x:TypeArguments="x:String" Name="MLInput" />
+              <Variable x:TypeArguments="x:String" Name="JResponce" />
+              <Variable x:TypeArguments="njl:JObject" Name="JsonOutput" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="433.6,117.6" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[&quot;Select the file to proceed &quot;]" />
+            <ui:SelectFile InitialDirectory="{x:Null}" Multiselect="{x:Null}" SelectedFiles="{x:Null}" DisplayName="Browse For File" Filter="Images| *.png; *.jpeg" sap:VirtualizedContainerService.HintSize="433.6,224.8" sap2010:WorkflowViewState.IdRef="SelectFile_1" SelectedFile="[OrignalsegnatcherPath]" />
+            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="433.6,122.4" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[OrignalsegnatcherPath]" />
+            <ui:SelectFile InitialDirectory="{x:Null}" Multiselect="{x:Null}" SelectedFiles="{x:Null}" DisplayName="Browse For File" Filter="Images| *.png; *.jpeg" sap:VirtualizedContainerService.HintSize="433.6,224.8" sap2010:WorkflowViewState.IdRef="SelectFile_2" SelectedFile="[TestSignatcherPath]" />
+            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="433.6,122.4" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[OrignalsegnatcherPath]" />
+            <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_2">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[MLInput]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[OrignalsegnatcherPath+","+TestSignatcherPath]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <uma:MLSkills ApiKey="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" Name="{x:Null}" NumberOfRetries="{x:Null}" ResponseHeaders="{x:Null}" Result="{x:Null}" SkillURL="{x:Null}" StatusCode="{x:Null}" TimeOutMs="{x:Null}" Connection="Robot" DisplayName="MLSkill" ExternApiFileType="JSON" sap:VirtualizedContainerService.HintSize="433.6,443.2" sap2010:WorkflowViewState.IdRef="MLSkills_2" Item="[MLInput]" JsonResponse="[JResponce]" NextPageNum="2" RefreshList="False" TotalCount="2">
+              <uma:MLSkills.MLSkillList>
+                <scg:List x:TypeArguments="um:MLSkill" Capacity="4">
+                  <um:MLSkill AccessUri="https://ai-uipath-we-b.deskover.com/mlskills/53e6fd64-bd0b-46cb-ac93-19774404ba30/83971e21-02e4-4432-89ea-f3eb4ba21b57/cluster-b/fruitimageclaseficationmlpakg" AccountId="53e6fd64-bd0b-46cb-ac93-19774404ba30" Description="" Id="75944483-22c2-42da-b8b7-095c54e3a598" InputDescription="Full path of the image file which you want to classify. Make sure that the image format is either JPG, JPEG or PNG." InputType="FILE" Name="FruitImageClaseficationMLPakg" OutputDescription="{}{&#xA;  &quot;response&quot;: {&#xA;    &quot;label&quot;: &quot;car&quot;,&#xA;    &quot;confidence&quot;: 0.85657345056533813&#xA;  }&#xA;}" ProjectId="45f17f35-2ef6-4fa4-bb07-49da6cfef416" TenantId="83971e21-02e4-4432-89ea-f3eb4ba21b57" />
+                  <x:Reference>__ReferenceID1</x:Reference>
+                </scg:List>
+              </uma:MLSkills.MLSkillList>
+              <uma:MLSkills.SelectedMLSkill>
+                <um:MLSkill x:Name="__ReferenceID1" AccessUri="https://ai-uipath-we-b.deskover.com/mlskills/53e6fd64-bd0b-46cb-ac93-19774404ba30/83971e21-02e4-4432-89ea-f3eb4ba21b57/cluster-b/signatchercomparizonemlskill" AccountId="53e6fd64-bd0b-46cb-ac93-19774404ba30" Description="" Id="ad59f774-603e-4b38-8534-db43de49eead" InputDescription="A pair of signature images in a list. Files formats accepted are png, and jpeg." InputType="FILE_LIST" Name="SignatcherComparizoneMLSkill" OutputDescription="Similarity score (between 0 and 1) and a preliminary determination if the signatures are from the same author or different authors based on a defined threshold in a Json format." ProjectId="45f17f35-2ef6-4fa4-bb07-49da6cfef416" TenantId="83971e21-02e4-4432-89ea-f3eb4ba21b57" />
+              </uma:MLSkills.SelectedMLSkill>
+            </uma:MLSkills>
+            <ui:DeserializeJson x:TypeArguments="njl:JObject" JsonSample="{x:Null}" DisplayName="Deserialize JSON" sap:VirtualizedContainerService.HintSize="433.6,122.4" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_2" JsonObject="[JsonOutput]" JsonString="[JResponce]" />
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="433.6,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_3" Message="[JsonOutput]" />
+          </Sequence>
+          <Sequence DisplayName="Sequence AI Center" sap:VirtualizedContainerService.HintSize="449.6,48" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="s:String[]" Name="Images" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign.To>
+                <OutArgument x:TypeArguments="s:String[]">[Images]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="s:String[]">[Directory.GetFiles("G:\Uipath academy\AI Center\test")]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each currentText" sap:VirtualizedContainerService.HintSize="433.6,56.8" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[Images]">
+              <ui:ForEach.Body>
+                <ActivityAction x:TypeArguments="x:String">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:String" Name="currentText" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,965.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Name="JResponce" />
+                      <Variable x:TypeArguments="njl:JObject" Name="Jobject" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uma:MLSkills ApiKey="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" Name="{x:Null}" NumberOfRetries="{x:Null}" ResponseHeaders="{x:Null}" Result="{x:Null}" SkillURL="{x:Null}" StatusCode="{x:Null}" TimeOutMs="{x:Null}" Connection="Robot" DisplayName="MLSkill" ExternApiFileType="JSON" sap:VirtualizedContainerService.HintSize="382.4,443.2" sap2010:WorkflowViewState.IdRef="MLSkills_1" Item="[currentText]" JsonResponse="[JResponce]" NextPageNum="2" RefreshList="False" TotalCount="1">
+                      <uma:MLSkills.MLSkillList>
+                        <scg:List x:TypeArguments="um:MLSkill" Capacity="4">
+                          <x:Reference>__ReferenceID2</x:Reference>
+                        </scg:List>
+                      </uma:MLSkills.MLSkillList>
+                      <uma:MLSkills.SelectedMLSkill>
+                        <um:MLSkill x:Name="__ReferenceID2" AccessUri="https://ai-uipath-we-b.deskover.com/mlskills/53e6fd64-bd0b-46cb-ac93-19774404ba30/83971e21-02e4-4432-89ea-f3eb4ba21b57/cluster-b/fruitimageclaseficationmlpakg" AccountId="53e6fd64-bd0b-46cb-ac93-19774404ba30" Description="" Id="75944483-22c2-42da-b8b7-095c54e3a598" InputDescription="Full path of the image file which you want to classify. Make sure that the image format is either JPG, JPEG or PNG." InputType="FILE" Name="FruitImageClaseficationMLPakg" OutputDescription="{}{&#xA;  &quot;response&quot;: {&#xA;    &quot;label&quot;: &quot;car&quot;,&#xA;    &quot;confidence&quot;: 0.85657345056533813&#xA;  }&#xA;}" ProjectId="45f17f35-2ef6-4fa4-bb07-49da6cfef416" TenantId="83971e21-02e4-4432-89ea-f3eb4ba21b57" />
+                      </uma:MLSkills.SelectedMLSkill>
+                    </uma:MLSkills>
+                    <ui:DeserializeJson x:TypeArguments="njl:JObject" JsonSample="{x:Null}" DisplayName="Deserialize JSON" sap:VirtualizedContainerService.HintSize="382.4,122.4" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_1" JsonObject="[Jobject]" JsonString="[JResponce]" />
+                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="382.4,56.8" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+                      <ui:CommentOut.Body>
+                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="449.6,168.8" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="416,108.8" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[Jobject]" />
+                        </Sequence>
+                      </ui:CommentOut.Body>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:CommentOut>
+                    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="382.4,117.6" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[Jobject(&quot;response&quot;)(&quot;label&quot;)]" />
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382.4,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[Jobject]" />
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEach.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:ForEach>
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="433.6,48" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="449.6,225.6" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[System.IO.Path.GetFileNameWithoutExtension(&quot;G:\Today Cource\Document understanding\36-Clear UiPath Advanced Certification in  First Attempt_  (UIARD Certification)(720P_HD).mp4&quot;)]" />
+                </Sequence>
+              </ui:CommentOut.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:CommentOut>
+          </Sequence>
+        </Sequence>
+      </ui:CommentOut.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:CommentOut>
+  </Sequence>
+</Activity>

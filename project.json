@@ -1,0 +1,92 @@
+{
+  "name": "Learning Process",
+  "projectId": "b212cbb3-f90b-407e-870c-c97183c52b03",
+  "description": "Learning Process",
+  "main": "Main.xaml",
+  "dependencies": {
+    "UiPath.CommunicationsMining.Activities": "[1.5.2]",
+    "UiPath.DocumentUnderstanding.Activities": "[2.12.1]",
+    "UiPath.DocumentUnderstanding.ML.Activities": "[1.31.2]",
+    "UiPath.Excel.Activities": "[2.24.3]",
+    "UiPath.IntelligentOCR.Activities": "[6.22.1]",
+    "UiPath.Mail.Activities": "[1.23.11]",
+    "UiPath.MLServices.Activities": "[2.0.4]",
+    "UiPath.OmniPage.Activities": "[1.20.0]",
+    "UiPath.Persistence.Activities": "[1.5.11]",
+    "UiPath.System.Activities": "[24.10.6]",
+    "UiPath.Testing.Activities": "[24.10.3]",
+    "UiPath.UIAutomation.Activities": "[24.10.6]",
+    "UiPath.WebAPI.Activities": "[1.21.1]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "24.10.6.0",
+  "projectVersion": "1.0.3",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": true,
+    "workflowSerialization": "DataContract",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "109446db-c061-42d0-bd84-7e2765567462",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tasks\\TestCase.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "86cff7dd-af14-43fa-b2dc-8ea66756ab85",
+        "dataVariationFilePath": ".variations\\Server quality AR_Sheet1.json",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tasks\\TestCase1.xaml"
+      }
+    ],
+    "saveToCloud": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "ec9bdda0-5517-486d-af66-561d4a879112",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "Tasks\\Test.xaml",
+      "uniqueId": "c5ec736f-f982-42a2-b451-02424fcdc54d",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
+}
